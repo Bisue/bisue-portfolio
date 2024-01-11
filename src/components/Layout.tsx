@@ -1,11 +1,9 @@
 import React from "react";
-import { Link, PageProps, Script } from "gatsby";
+import { Link, PageProps } from "gatsby";
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <>
-      <Script src="//wcs.naver.net/wcslog.js"></Script>
-      <Script>{`if(!wcs_add) var wcs_add = {}; wcs_add["wa"] = "32b593592d0696"; if(window.wcs) { wcs_do(); }`}</Script>
       <div className="relative">
         <header className="text-white absolute top-0 left-0 w-full z-50">
           <div className="flex items-center h-24 container mx-auto">
