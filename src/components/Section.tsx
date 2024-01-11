@@ -1,7 +1,7 @@
 import React from "react";
 
 interface SectionProps {
-  background: string;
+  backgroundClassName: string;
   title: string;
   description: string;
   id: string;
@@ -9,7 +9,7 @@ interface SectionProps {
 }
 
 const Section: React.FC<SectionProps> = ({
-  background,
+  backgroundClassName,
   title,
   description,
   id,
@@ -18,8 +18,7 @@ const Section: React.FC<SectionProps> = ({
   return (
     <div
       id={id}
-      className="flex flex-col items-center text-white"
-      style={{ backgroundColor: background }}
+      className={`flex flex-col items-center text-white ${backgroundClassName}`}
     >
       <div className="text-center tracking-widest my-14">
         <div className="font-black" style={{ fontSize: 40 }}>

@@ -75,7 +75,7 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
         </Splash>
         <Section
-          background="#065F46"
+          backgroundClassName="bg-pattern-zigzag-emerald"
           title="소개"
           description="Introduction"
           id="introduction"
@@ -114,7 +114,7 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
         </Section>
         <Section
-          background="#3730A3"
+          backgroundClassName="bg-pattern-tictactoe-emerald"
           title="교육"
           description="Educations"
           id="educations"
@@ -145,7 +145,7 @@ const IndexPage: React.FC<PageProps> = () => {
           <br />
         </Section>
         <Section
-          background="#155e75"
+          backgroundClassName="bg-pattern-hexaon-cyan"
           title="경험"
           description="experiences"
           id="experiences"
@@ -176,7 +176,7 @@ const IndexPage: React.FC<PageProps> = () => {
           <br />
         </Section>
         <Section
-          background="#1e40af"
+          backgroundClassName="bg-pattern-circuit-blue"
           title="프로젝트"
           description="Projects"
           id="projects"
