@@ -65,12 +65,12 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
           <div className="flex items-center gap-32 mb-10">
             {externalLinks.map((link) => (
-              <ExternalLink link={link}></ExternalLink>
+              <ExternalLink key={link.title} link={link}></ExternalLink>
             ))}
           </div>
           <div className="flex items-center gap-16">
             {internalLinks.map((link) => (
-              <InternalLink link={link}></InternalLink>
+              <InternalLink key={link.title} link={link}></InternalLink>
             ))}
           </div>
         </Splash>
