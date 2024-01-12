@@ -6,6 +6,7 @@ import ExternalLink from "../components/ExternalLink";
 import InternalLink from "../components/InternalLink";
 import Section from "../components/Section";
 import GoToTop from "../components/GoToTop";
+import RollingText from "../components/RollingText";
 
 const IndexPage: React.FC<PageProps> = () => {
   const externalLinks = [
@@ -50,10 +51,10 @@ const IndexPage: React.FC<PageProps> = () => {
         <Splash>
           <div className="flex items-center justify-between w-full max-w-4xl mb-24">
             <div>
-              <div className="mb-3" style={{ fontSize: 24 }}>
-                풀스택을 지향하는 개발자
-              </div>
-              <div className="font-black" style={{ fontSize: 64 }}>
+              <RollingText
+                texts={["풀스택을 지향하는 개발자", "불편함을 해결하는 개발자"]}
+              ></RollingText>
+              <div className="font-black mt-3" style={{ fontSize: 64 }}>
                 <span className="text-emerald-500">변찬혁</span>입니다!
               </div>
             </div>
