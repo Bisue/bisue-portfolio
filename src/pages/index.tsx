@@ -7,6 +7,7 @@ import InternalLink from "../components/InternalLink";
 import Section from "../components/Section";
 import GoToTop from "../components/GoToTop";
 import RollingText from "../components/RollingText";
+import ReadMoreArrow from "../components/ReadMoreArrow";
 
 const IndexPage: React.FC<PageProps> = () => {
   const externalLinks = [
@@ -73,6 +74,9 @@ const IndexPage: React.FC<PageProps> = () => {
             {internalLinks.map((link) => (
               <InternalLink key={link.title} link={link}></InternalLink>
             ))}
+          </div>
+          <div className="absolute bottom-10 w-full flex justify-center">
+            <ReadMoreArrow></ReadMoreArrow>
           </div>
         </Splash>
         <Section
