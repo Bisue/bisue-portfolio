@@ -10,10 +10,14 @@ const GoToTop: React.FC = () => {
 
   return (
     <button
-      className="fixed bottom-9 right-9 p-5 rounded-full bg-white"
+      className="fixed bottom-9 right-9 p-5 rounded-full bg-white/75 group transition hover:bg-white/100"
       onClick={scrollToTop}
     >
-      <img className="w-16 h-16" src="/img/rocket.svg" alt="위로" />
+      <img
+        className="w-16 h-16 transition group-hover:-translate-y-2"
+        src="/img/rocket.svg"
+        alt="위로"
+      />
     </button>
   );
 };
