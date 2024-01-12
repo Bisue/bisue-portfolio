@@ -58,7 +58,7 @@ const IndexPage: React.FC<PageProps> = () => {
               </div>
             </div>
             <img
-              className="rounded-full border-2 border-white w-64 h-64"
+              className="rounded-full border-2 border-white w-64 h-64 transition hover:scale-105"
               src="/img/profile.jpg"
               alt="변찬혁"
             />
