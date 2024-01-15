@@ -8,6 +8,7 @@ import Section from "../components/Section";
 import GoToTop from "../components/GoToTop";
 import RollingText from "../components/RollingText";
 import ReadMoreArrow from "../components/ReadMoreArrow";
+import Seo from "../components/Seo";
 
 const IndexPage: React.FC<PageProps> = () => {
   const externalLinks = [
@@ -219,6 +220,6 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => (
-  <title>변찬혁 - 풀스택을 지향하는 개발자</title>
-);
+export const Head = () => {
+  return <Seo></Seo>;
+};
