@@ -3,8 +3,8 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `변찬혁 - 풀스택을 지향하는 개발자`,
-    // url: "http://localhost:8000",
-    url: "https://byeonchanhyuk.com",
+    // siteUrl: "http://localhost:8000",
+    siteUrl: "https://byeonchanhyuk.com",
     description:
       "풀스택을 지향하는 개발자, 변찬혁입니다. 주변의 불편함을 제가 가진 개발 역량을 이용해 해결하는 것을 좋아합니다.",
     image: "/img/og.png",

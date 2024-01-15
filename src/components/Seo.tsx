@@ -12,13 +12,13 @@ const Seo: React.FC<SeoProps> = ({ title, description, children }) => {
     title: defaultTitle,
     description: defaultDescription,
     image,
-    url,
+    siteUrl,
   } = useSiteMetadata();
 
   const seoData = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${url}${image}`,
+    image: `${siteUrl}${image}`,
   };
 
   return (
