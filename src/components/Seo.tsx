@@ -26,10 +26,10 @@ const Seo: React.FC<SeoProps> = ({ title, description, children }) => {
       <title>{seoData.title}</title>
       <meta name="description" content={seoData.description} />
       <meta name="image" content={seoData.image} />
-      <meta name="og:title" content={seoData.title} />
-      <meta name="og:site_name" content={seoData.title} />
-      <meta name="og:description" content={seoData.description} />
-      <meta name="og:image" content={seoData.image} />
+      <meta property="og:title" content={seoData.title} />
+      <meta property="og:site_name" content={seoData.title} />
+      <meta property="og:description" content={seoData.description} />
+      <meta property="og:image" content={seoData.image} />
       {children}
     </>
   );
